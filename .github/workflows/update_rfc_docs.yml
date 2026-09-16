@@ -25,5 +25,5 @@ jobs:
         run: |
           bash ./update.sh
           git add index.html rfc/
-          git commit -m "Update RFC documents"
+          git diff --staged --quiet || git commit -m "Update RFC documents"
           git push

@@ -1,7 +1,6 @@
 rsync -avz --delete rsync.rfc-editor.org::rfcs-text-only rfc
-rm ./index.html
 
-cat > ./index.html <<EOF
+cat > ./index.html << "EOF"
 <!DOCTYPE html>
 
 <html lang="zh-CN">
@@ -25,7 +24,7 @@ EOF
 
 awk '{print "           <li><a href=\"./rfc/" $0 "\">" $0 "</a></li>"}' <(ls -1v ./rfc/ | grep -E "rfc[0-9]+\.txt") >> ./index.html
 
-cat >> ./index.html <<EOF
+cat >> ./index.html << "EOF"
         </ul>
     </p>
 </body>
