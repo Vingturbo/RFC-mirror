@@ -1,0 +1,29 @@
+name: Add Website
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  add_website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 复制仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 处理git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      - name: 更新 RFC 文档
+        run: |
+          bash ./update.sh
+          git add index.html rfc/
+          git commit -m "Update RFC documents"
+          git push
