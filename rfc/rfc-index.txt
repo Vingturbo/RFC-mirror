@@ -42819,6 +42819,10 @@ See the RFC Editor Web page http://www.rfc-editor.org
      (Format: HTML, TXT, PDF, XML) (Status: PROPOSED STANDARD) (DOI:
      10.17487/RFC10031)
 
+10032 The AEGIS Authenticated Encryption Algorithms. F. Denis, S. Lucas.
+     September 2026. (Format: HTML, TXT, PDF, XML) (Status:
+     INFORMATIONAL) (DOI: 10.17487/RFC10032)
+
 10033 Hash-Based Signatures: State and Backup Management. T. Wiggers, K.
      Bashiri, S. Kölbl, J. Goodman, S. Kousidis. September 2026. (Format:
      HTML, TXT, PDF, XML) (Status: INFORMATIONAL) (DOI:
