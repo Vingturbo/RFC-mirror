@@ -42918,4 +42918,8 @@ See the RFC Editor Web page http://www.rfc-editor.org
      HTML, TXT, PDF, XML) (Status: PROPOSED STANDARD) (DOI:
      10.17487/RFC10067)
 
+10075 The SNAC Router Flag in ICMPv6 Router Advertisement Messages. J.
+     Hui. October 2026. (Format: HTML, TXT, PDF, XML) (Status: PROPOSED
+     STANDARD) (DOI: 10.17487/RFC10075)
+
 
